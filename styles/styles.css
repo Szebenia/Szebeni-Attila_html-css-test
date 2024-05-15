@@ -1,0 +1,140 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  margin: 20px;
+}
+
+.main-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.fintest {
+  width: 50%;
+}
+
+.fintest p {
+  font-size: 16px;
+}
+
+.button {
+  background-color: rgb(79, 70, 229);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: rgb(67, 56, 202);
+  transition-duration: 0.5s;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+.progmatic {
+  flex-grow: 1;
+  display: grid;
+  gap: 16px;
+}
+
+.card {
+  border: 1px solid rgb(243, 244, 246);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.card h2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card p {
+  font-size: 14px;
+}
+.card:hover {
+  border: 1px solid rgb(229, 231, 235);
+}
+
+img {
+  width: 20px;
+  background-color: rgb(249, 250, 251);
+  border-radius: 10px;
+}
+
+.getstarted_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.getstarted {
+  display: flex;
+  text-align: center;
+  width: max(512px);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+  color: rgb(107, 114, 128);
+}
+
+.getstarted h2 {
+  font-size: 30px;
+  color: black;
+}
+
+.getstarted a {
+  color: rgb(107, 114, 128);
+}
+
+.getstarted button {
+  margin-left: 70px;
+}
+
+input[type="text"],
+select {
+  min-width: 352px;
+  max-width: 448px;
+  border: 1px solid rgb(229, 231, 235);
+  border-radius: 8px;
+  padding: 16px;
+  color: rgb(107, 114, 128);
+}
+
+@media screen and (max-width: 1138px) {
+  .fintest {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .progmatic {
+    grid-template-rows: repeat(3, 165px);
+    grid-template-columns: repeat(2, minmax(120px, 176px));
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .progmatic {
+    grid-template-rows: repeat(2, 165px);
+    grid-template-columns: repeat(3, minmax(120px, 176px));
+  }
+}
+
+@media screen and (max-width: 1138px) {
+  .main-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
